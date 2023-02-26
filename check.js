@@ -21,12 +21,10 @@ app.post('/', function (_req, res) {
     var i;
 
     for (i = 0; i < 5; i++) {
-        if (users === formData) {
+        if (users[i] === formData) {
             isPresent = true;
         }
-        console.log(formData);
     }
-    console.log(users);
 
     if (isPresent) {
         res.render('1', { formData });
